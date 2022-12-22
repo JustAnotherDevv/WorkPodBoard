@@ -1,0 +1,20 @@
+[project]
+name = 'WorkBoard'
+description = 'WorkBoard is a trully decentralized web3 freelance solutions created with Clarity'
+authors = []
+telemetry = false
+cache_dir = '.\.cache'
+requirements = []
+
+[contracts.work-board]
+path = 'contracts/work-board.clar'
+clarity_version = 1
+epoch = 2.0
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
